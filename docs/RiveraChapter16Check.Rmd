@@ -1,0 +1,60 @@
+---
+title: "RiveraChapter16Check"
+author: "Michael Rivera"
+date: "2023-11-30"
+output: pdf_document
+---
+
+```{r}
+library(RiveraChapter16)
+
+Tmax <- FlagWeatherStation %>%
+  ggplot(., aes(x = DATE2, y = TMAX)) +
+  geom_line()
+
+Tmax
+
+Tmin <- FlagWeatherStation %>%
+  ggplot(., aes(x = DATE2, y = TMIN)) +
+  geom_line()
+
+Tmin
+
+Snow <- FlagWeatherStation %>%
+  ggplot(., aes(x = DATE2, y = SNOW)) +
+  geom_line()
+
+Snow
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
